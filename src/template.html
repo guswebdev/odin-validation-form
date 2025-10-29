@@ -10,7 +10,104 @@
       <h1>Template Webpack</h1>
     </header>
     <main>
-      <h2>Content Main</h2>
+      <div class="form-container">
+        <h2>Registro</h2>
+        <form action="#" method="post" novalidate>
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              required
+              autocomplete="off"
+            />
+            <span style="color: red" data-error="nombre">Mensaje de error</span>
+          </div>
+
+          <div class="form-group">
+            <label for="apellido">Apellido</label>
+            <input
+              type="text"
+              id="apellido"
+              name="apellido"
+              required
+              autocomplete="off"
+            />
+            <span style="color: red" data-error="apellido"
+              >Mensaje de error</span
+            >
+          </div>
+
+          <div class="form-group full-width">
+            <label for="correo">Correo electrónico</label>
+            <input
+              type="email"
+              id="correo"
+              name="correo"
+              required
+              autocomplete="off"
+            />
+            <span style="color: red" data-error="correo">Mensaje de error</span>
+          </div>
+
+          <div class="form-group">
+            <label for="pais">País</label>
+            <input
+              type="text"
+              id="pais"
+              name="pais"
+              required
+              autocomplete="off"
+            />
+            <span style="color: red" data-error="pais">Mensaje de error</span>
+          </div>
+
+          <div class="form-group">
+            <label for="codigo_postal">Código postal</label>
+            <input
+              type="tel"
+              id="codigo_postal"
+              name="codigo_postal"
+              required
+              autocomplete="off"
+            />
+            <span style="color: red" data-error="codigo_postal"
+              >Mensaje de error</span
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="contrasena">Contraseña</label>
+            <input
+              type="password"
+              id="contrasena"
+              name="contrasena"
+              required
+              autocomplete="off"
+            />
+            <span style="color: red" data-error="contraseña"
+              >Mensaje de error</span
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="confirmar_contrasena">Confirmar contraseña</label>
+            <input
+              type="password"
+              id="confirmar_contrasena"
+              name="confirmar_contrasena"
+              required
+              autocomplete="off"
+            />
+            <span style="color: red" data-error="confirmar_contrasena"
+              >Mensaje de error</span
+            >
+          </div>
+
+          <button type="submit">Registrarse</button>
+        </form>
+      </div>
     </main>
     <footer class="footer">
       <h3>Hecho por Gustavo Miño</h3>
