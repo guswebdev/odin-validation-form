@@ -10,9 +10,9 @@
       <h1>Template Webpack</h1>
     </header>
     <main>
-      <div class="form-container">
+      <div class="form-container" data-form-container>
         <h2>Registro</h2>
-        <form action="#" method="post" novalidate>
+        <form id="form" action="#" method="post" novalidate>
           <div class="form-group">
             <label for="nombre">Nombre</label>
             <input
@@ -22,7 +22,7 @@
               required
               autocomplete="off"
             />
-            <span style="color: red" data-error="nombre">Mensaje de error</span>
+            <span data-error="nombre">Mensaje de error</span>
           </div>
 
           <div class="form-group">
@@ -34,9 +34,7 @@
               required
               autocomplete="off"
             />
-            <span style="color: red" data-error="apellido"
-              >Mensaje de error</span
-            >
+            <span data-error="apellido">Mensaje de error</span>
           </div>
 
           <div class="form-group full-width">
@@ -48,7 +46,7 @@
               required
               autocomplete="off"
             />
-            <span style="color: red" data-error="correo">Mensaje de error</span>
+            <span data-error="correo">Mensaje de error</span>
           </div>
 
           <div class="form-group">
@@ -60,7 +58,7 @@
               required
               autocomplete="off"
             />
-            <span style="color: red" data-error="pais">Mensaje de error</span>
+            <span data-error="pais">Mensaje de error</span>
           </div>
 
           <div class="form-group">
@@ -72,9 +70,7 @@
               required
               autocomplete="off"
             />
-            <span style="color: red" data-error="codigo_postal"
-              >Mensaje de error</span
-            >
+            <span data-error="codigo_postal">Mensaje de error</span>
           </div>
 
           <div class="form-group">
@@ -86,9 +82,7 @@
               required
               autocomplete="off"
             />
-            <span style="color: red" data-error="contraseña"
-              >Mensaje de error</span
-            >
+            <span data-error="contraseña">Mensaje de error</span>
           </div>
 
           <div class="form-group">
@@ -100,12 +94,11 @@
               required
               autocomplete="off"
             />
-            <span style="color: red" data-error="confirmar_contrasena"
-              >Mensaje de error</span
-            >
+            <span data-error="confirmar_contrasena">Mensaje de error</span>
           </div>
 
           <button type="submit">Registrarse</button>
+          <span data-error="enviar-form"></span>
         </form>
       </div>
     </main>
